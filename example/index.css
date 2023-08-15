@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+.example-container{
+    width: 500px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container{
+    height: 200px;
+    /* border: 1px solid red; */
+}
+
+.tag {
+    /* background-color: red; */
+    font-size: 15px;
+}
+
+.input {
+    /* background-color: black;
+    color: white; */
+    font-size: 15px;
+}

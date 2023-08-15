@@ -1,0 +1,39 @@
+name: Publish to NPM
+
+on:
+  release:
+    types: [created]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Install dependencies 🔧
+        run: npm install
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Prepare for Publishing
+        run: |
+          mkdir publish
+          cp -r dist publish/
+          cp package.json publish/
+          cp -r .github publish/
+          cp README.md publish/
+        working-directory: .
+
+      - name: Publish package on NPM 📦
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish publish/

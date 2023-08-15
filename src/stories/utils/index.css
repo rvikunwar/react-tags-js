@@ -1,0 +1,19 @@
+
+.main-container {
+    height: 200px;
+    /* border: 1px solid red; */
+}
+
+.main-container:hover{
+    border: 1.5px solid #209AE4;
+    box-sizing: border-box;
+}
+
+.tag {
+    background-color: #AF7AC5;
+    font-size: 15px;
+}
+
+.input {
+    font-size: 15px;
+}
