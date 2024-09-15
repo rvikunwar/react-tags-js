@@ -1,5 +1,5 @@
 import React from "react";
-import { TagInterface, tagValue } from "./interface";
+import { TagInterface, tagValue } from "./";
 import Close from "./Close";
 
 interface TagProps extends TagInterface {
