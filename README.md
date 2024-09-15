@@ -159,6 +159,7 @@ An object defining custom CSS classes for various components of the tag selector
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100px !important;
 }
 
 .custom-tag {
