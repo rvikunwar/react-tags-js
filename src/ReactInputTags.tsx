@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FC, KeyboardEvent, useEffect, useRef, useState } from "react";
 import Tag from "./Tag";
-import { ReactInputTagsProps, TagOptions, tagValue } from "./index";
+import { ReactInputTagsProps, TagOptions, tagValue } from "./interface";
 
 export const ReactInputTags: FC<ReactInputTagsProps> = ({
   tags,
