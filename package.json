@@ -1,6 +1,6 @@
 {
   "name": "react-tags-js",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A flexible and customizable React component for tag selection.",
   "source": "src/index.ts",
   "main": "dist/index.cjs",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/rvikunwar/react-tags-js/issues"
   },
-  "homepage": "https://github.com/rvikunwar/react-tags-js.git#readme",
+  "homepage": "https://www.reacttags.xyz/",
   "keywords": [
     "react",
     "component",
