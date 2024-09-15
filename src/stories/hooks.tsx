@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactInputTags from "../index";
-import { TagInterface } from "../index";
+import { TagInterface } from "../interface";
 import { mockTagsForCustom, options, tagExamplesForColor, tagExamplesForOption, tagExamplesForReadOnly } from "./utils";
 import "./utils/index.css";
 

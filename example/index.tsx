@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactInputTags from "../src";
-import { TagInterface } from "../src/ReactInputTags";
+import { TagInterface } from "../src/interface";
 import "./index.css";
 
 function addReadOnlyToTags(tag: TagInterface): Boolean {
