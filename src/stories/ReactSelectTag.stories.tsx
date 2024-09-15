@@ -1,43 +1,45 @@
-import React from 'react';
-import type { StoryObj } from '@storybook/react';
-import ReactSelectTag from '../index'
-import { BasicHandler, CustomTagContainerHandler, 
-    ReadOnlyAndCreatableHandler, ReadOnlyHandler, 
-    WithColorHandler, WithOptionHandler } from './hooks';
-
+import React from "react";
+import type { StoryObj } from "@storybook/react";
+import ReactSelectTag from "../index";
+import {
+  BasicHandler,
+  CustomTagContainerHandler,
+  ReadOnlyAndCreatableHandler,
+  ReadOnlyHandler,
+  WithColorHandler,
+  WithOptionHandler,
+} from "./hooks";
 
 const meta = {
-    component: ReactSelectTag,
-    parameters: {
-        layout: 'top',
-    },
+  component: ReactSelectTag,
+  parameters: {
+    layout: "top",
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof ReactSelectTag>;
 
-
-
 export const Basic: Story = {
-    render: () => <BasicHandler />,
+  render: () => <BasicHandler />,
 };
 
 export const ReadOnly: Story = {
-    render: () => <ReadOnlyHandler />,
+  render: () => <ReadOnlyHandler />,
 };
 
 export const ReadOnlyAndCreatable: Story = {
-    render: () => < ReadOnlyAndCreatableHandler />,
+  render: () => <ReadOnlyAndCreatableHandler />,
 };
 
 export const ColorVariant: Story = {
-    render: () => <WithColorHandler />
-}
+  render: () => <WithColorHandler />,
+};
 
 export const WithOptions: Story = {
-    render: () => <WithOptionHandler />
-}
+  render: () => <WithOptionHandler />,
+};
 
 export const CustomComponent: Story = {
-    render: () => <CustomTagContainerHandler />
-}
+  render: () => <CustomTagContainerHandler />,
+};

@@ -56,8 +56,8 @@ function BasicMovieSelection() {
         <div>
             <h1>Basic Movie Selection</h1>
             <ReactInputTags
-                tags={selectedTags}
-                onChange={handleTagsChange}
+                tags={selectedMovies}
+                onChange={handleMoviesChange}
                 options={movieOptions}
             />
         </div>
@@ -149,8 +149,75 @@ A boolean flag that determines whether users can create new tags. When set to tr
 
 ### style
 An object defining custom CSS classes for various components of the tag selector, including mainContainer, tag, input, optionContainer, option, and selectedOption.
+```css
+/* styles.css */
+
+.custom-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-tag {
+  background-color: #007bff;
+  color: white;
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-tag button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-input {
+  flex: 1;
+  min-width: 120px;
+  border: none;
+  outline: none;
+  padding: 4px;
+  margin: 4px;
+  font-size: 16px;
+}
+
+.custom-option-container {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 300px; /* Adjust as needed */
+  margin-top: 4px;
+  z-index: 1000;
+}
+
+.custom-option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.custom-option:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-selected-option {
+  background-color: #e9ecef;
+}
+```
 
 ```typescript
+import './styles.css';
+
 interface StyleInterface {
     mainContainer?: string;
     tag?: string;
