@@ -1,5 +1,5 @@
 import React from 'react'
-import { tagValue } from './interface';
+import { tagValue } from './';
 
 type onClear = (value: tagValue) => void;
 
