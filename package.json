@@ -9,7 +9,6 @@
   "scripts": {
     "dev": "parcel watch",
     "build": "parcel build",
-    // "test": "jest --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "clean-build": "rmdir /s /q dist"
