@@ -7,18 +7,18 @@
     font-family: 'Inter', sans-serif;
 }
 
-.main-container{
-    height: 200px;
+.main-container-1{
+    height: 100px;
     /* border: 1px solid red; */
 }
 
-.tag {
-    /* background-color: red; */
-    font-size: 15px;
+.tag-1 {
+    background-color: #38393c;
+    font-size: 12px;
 }
 
-.input {
+.input-1 {
     /* background-color: black;
     color: white; */
-    font-size: 15px;
+    font-size: 12px;
 }
